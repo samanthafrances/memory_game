@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-image: linear-gradient(to left bottom, #001cb9, #006bf2, #00a1f8, #00d0e0, #46fac8);
+    background-size: cover;
+    background-position: center center; 
+    background-attachment: fixed; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#fff;
+  }
+
+  header {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    z-index: 100;
+  }
+    
+  nav a {
+      line-height: 4rem;
+      padding: 0 1rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+    }
+
+  h2 {
+      margin-top: 5rem;
+      font-size:1.2rem;
+      padding-top: 10rem;
+      padding-bottom: 2rem;
+      padding-left: 10rem;
+      padding-right: 10rem;
+      margin:1rem 0;
+      text-align: center;
+    }
+
+  h3 {
+    margin-top: 3rem;
+    font-size:1.2rem;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin:1rem 0;
+    text-align: center;
+  }
+
+  h4 {
+    font-size:1.2rem;
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    margin:1rem 0;
+    text-align: center;
+  }
+
+.buttons { 
+  text-align: center; margin-top: 1rem; 
+  text-decoration: none;
+} 
+
+.buttons a { 
+  display: inline-block; outline: none; cursor: pointer; font-size: 17px; line-height: 1; border-radius: 500px; transition-property: background-color, border-color, color, box-shadow, filter; transition-duration: 0.3s; border: 1px solid transparent; letter-spacing: 2px; min-width: 160px; text-transform: uppercase; white-space: normal; font-weight: 700; text-align: center; padding: 16px 14px 18px; color: #ffffff; box-shadow: inset 0 0 0 2px #ffffff; background-color: transparent; height: 48px; 
+} 
+
+.buttons a:hover { 
+  color: #fff; background-color: #00d0e0; 
+} 
+
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
+
+.video {
+padding: 3rem;
+align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    background-image: linear-gradient(to right top, #001cb9, #006bf2, #00a1f8, #00d0e0, #46fac8);
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 8px 9px 26px 0px 0 rgba(45, 60, 70, 0.5);
+    margin: 0 0 5em;
+    place-items: center;
+
+}
+
+.icons .card {
+  height:6rem;
+  width: 6rem;
+  margin: 0.4rem;
+  background-image: url('assets/backofcard.jpg');
+  box-shadow: 10px 10px 25px 0px 0rgba(45, 60, 70, 0.5);
+  font-size:0;
+  color: #00a1f8;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 2px 20px 0 rbga(46, 61, 73, 0.5);
+}
+
+
+.card.open {
+  transform: rotateY(180deg);
+  background: #fff;
+  cursor: default;
+  animation-name: flipInX;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
+
+.card.show {
+  font-size: 33px;
+  transform: rotateY(180deg);
+}
+
+
+@media (max-width: 320px) {
+    .icons {
+        width: 85%;
+    }
+
+    icons .card {
+        height: 4.7rem;
+        width: 4.7rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        font-size: 22px;
+    }
+
+    .icons {
+        width: 660px;
+        height: 680px;
+    }
+
+    .icons .card {
+        height: 125px;
+        width: 125px;
+    }
+
+    .popup {
+        width: 60%;
+    }
+}
