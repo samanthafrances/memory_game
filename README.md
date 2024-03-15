@@ -2,7 +2,7 @@
 
 ## Description
 - Live site: sam-yates-memory.surge.sh
-This is an Ocean Cleanup themed 16 card game that tests the player's memory. 
+- This is an Ocean Cleanup themed 16 card game that tests the player's memory. 
 - There will be 8 matching pairs.
 - The player begins by clicking a card, and that card flips over and remains flipped over until another card is clicked. 
 - Once the second card is clicked, if it matches the first card, both cards stay flipped over as you continue trying to match the rest of the cards. 
